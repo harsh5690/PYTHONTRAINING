@@ -2,12 +2,9 @@
  -> Software is a set of instructions, data or programs used to operate computers and execute specific tasks
  
 2)What are the types of Applications?
- ->1) Web development
-   2) Data analysis and visualization
-   3) Machine learning and artificial intelligence
-   4) Game development
-   5) Desktop applications
-   6) Scripting
+ ->1) Web applicaton
+   2) Desktop applications
+   3) mobile application
 
 3)What is programing?
  -> Programming is the process of creating a set of instructions that tell a computer how to perform a task 
