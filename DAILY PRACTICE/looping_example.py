@@ -3,7 +3,7 @@ looping example :
 
 there are 2 types of loop
 1) for loop : for loop = sequence control loop
-2) while loop : while loop : enter controll loop
+2) while loop : while loop : entry controll loop
   -> condition check at enter level
   if condition goes true loop will execute
 """

@@ -30,7 +30,7 @@ print(l1)
 
 #shoping list
 
-shoping_list = ["bread","butter","milk"]
+shoping_list = ["bread","butter","mlik"]
 print(shoping_list)
 
 for i in shoping_list:

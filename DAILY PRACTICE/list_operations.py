@@ -17,6 +17,6 @@ remove() :
 """
 
 l1 = ["java","python","php","c++"]
-name = input("enter subject which you want to remove")
+name = input("enter subject which you want to remove:")
 l1.remove(name)
 print(l1)
