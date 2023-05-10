@@ -34,7 +34,6 @@ while status :
             
             print(stock)
 
-
             manager_choice = input("do you want to add more product : ")
             if manager_choice == "y" or manager_choice == "n":
                 product_manger_status = True
@@ -44,3 +43,4 @@ while status :
         print("CUSTOMER")
     else:
         print("EXIT")
+    

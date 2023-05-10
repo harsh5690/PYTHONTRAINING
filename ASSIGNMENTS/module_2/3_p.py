@@ -1,3 +1,5 @@
+# Write a Python program to get the Fibonacci series of given range.
+
 n=int(input("enter the number:-"))
 a = 1
 b = 1
