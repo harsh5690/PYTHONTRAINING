@@ -1,0 +1,16 @@
+inheritance : inheritance is a most powerfull concept in oops
+        inheritance which is provide parent and chlid relationship
+        one class derived proerties of another class its called inheritance
+
+
+        using of inheritance wee can reduce our code 
+
+        inheritance provide reusabillty and reduce code , so , we can save our time 
+
+othere are mainly 5 type of inheritance
+
+1)single level
+2)multi level
+3)multiple 
+4)hierarchical
+5)hybrid inheritance
