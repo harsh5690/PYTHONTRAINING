@@ -101,7 +101,6 @@ while status:
         mydb.commit()
         print("successfull deleted")
         
-
     elif choice==6:
         status =False
     else :
