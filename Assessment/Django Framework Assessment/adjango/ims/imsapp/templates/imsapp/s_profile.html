@@ -1,0 +1,102 @@
+﻿{% extends "imsapp/s_index.html" %}
+{% load static %}
+
+{% block content %}
+<section class="content home">
+            <div class="block-header">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <h2>Profile <small class="text-muted">Welcome to Institute Management System</small></h2>
+                    </div>            
+                    <div class="col-lg-7 col-md-7 col-sm-12 text-right">
+                        
+                       
+                        
+                        <ul class="breadcrumb float-md-right">
+                            <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="zmdi zmdi-home"></i> Institute Management System</a></li>
+                                                                                        <li class="breadcrumb-item active">Profile</li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">                
+                
+    <div class="row clearfix profile-page">
+        <div class="col-lg-4 col-md-12">
+            <div class="card profile-header">
+                <div class="body text-center">
+                    <div class="profile-image"> <img src="{{sid.pic.url}}" alt=""> </div>
+                    <div>
+                        <h4 class="m-b-0"><strong>{{sid.firstname}}</strong> {{sid.lastname}}</h4>
+                        <span class="job_post">{{uid.role}}</span>
+                        <p>{{sid.address}}<p>
+                    </div>
+                    
+                </div>                    
+            </div>                               
+                         
+        </div>
+        <div class="col-lg-8 col-md-12">
+            <div class="card">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Account">Account</a></li>                        
+                </ul>
+                <div class="tab-content">
+                    
+                    <div class="tab-pane body" id="Account">
+                        <form action = "{% url 'change-password' %}" method = "POST">
+                            {% csrf_token %}
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="email" value="{{uid.email}}" readonly disabled >
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Current Password" name="currentpassword">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="New Password" name="newpassword">
+                                </div> 
+                                <input type ="submit" class="btn btn-info btn-round" value="Save changes">
+                        </form>
+                        <hr>
+                        <form action="{% url 'update-student-profile' %}" method="POST" enctype = "multipart/form-data">
+                            {% csrf_token %}
+                        <div class="row clearfix">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="First Name" name ="firstname" value = "{{sid.firstname}}">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Last Name" name ="lastname" value = "{{sid.lastname}}">
+                                </div>
+                            </div>                                    
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Address" name = "address" value = "{{sid.address}}">
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <input type = "file" class="form-control" name = "pic" >
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-12">
+                                <input type ="submit" class="btn btn-primary btn-round" value ="Save Changes">
+                            </div>
+                        </div>
+                    </form>
+                    </div>                        
+                </div>
+            </div>
+                        
+        </div>
+    </div>
+
+            </div>
+        </section>
+
+        {% endblock %}
