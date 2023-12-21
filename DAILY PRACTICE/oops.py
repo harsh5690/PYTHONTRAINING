@@ -3,11 +3,9 @@ oops  : object oriented programming syastem
 
 class : class is a collection of data member and member function 
         or
-        class which is contain data member and mem+ber function is single entity
+        class which is contain data member and member function is single entity
         or
         class is like group which is store different data member in it 
-
-
 
 object : object is an instance of class
         if class is a data then object is an isinstance or varible of class
