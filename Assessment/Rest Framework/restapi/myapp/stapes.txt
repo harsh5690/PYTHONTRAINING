@@ -1,0 +1,11 @@
+stapes
+python -m venv venv
+venv\Scripts\activate
+pip install Django    
+django-admin startproject restapi
+cd restapi
+python manage.py startapp myapp
+pip install djangorestframework  
+python manage.py runserver  
+python manage.py makemigrations  
+python manage.py migrate
